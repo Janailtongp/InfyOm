@@ -40,9 +40,9 @@
 			"infyomlabs/adminlte-templates": "7.0.x-dev"
 		}
 ```
-- 5 - Execute o comando: `composer update`
+- 4 - Execute o comando: `composer update`
 
-- 6 - Adiciona as linhas abaixo em "config/app.php":
+- 5 - Adiciona as linhas abaixo em "config/app.php":
 
 ```php
 		'Form'      => Collective\Html\FormFacade::class,
@@ -50,27 +50,27 @@
 		'Flash'     => Laracasts\Flash\Flash::class,
 ```
 
-- 7 - Execute o comando: `php artisan vendor:publish`
+- 6 - Execute o comando: `php artisan vendor:publish`
 
 	-- Escolha 0 para publicar todos
 
-- 8 - Execute o comando: `php artisan infyom:publish`
+- 7 - Execute o comando: `php artisan infyom:publish`
 
 	--  Caso deseje, adicione novos campos a migration de User, por exemplo:  CPF, perfil, peso, [...]
 
 	-- Todos os campos adicionados na migration devem ser adicionados também na respectiva model dentro do array $fillable.
 
-- 9 - Execute os comandos:
+- 8 - Execute os comandos:
 
 	`composer require laravel/ui`
 	
 	`php artisan ui bootstrap --auth`
 
-- 10 - Execute o comando: `php artisan infyom.publish:layout`
+- 9 - Execute o comando: `php artisan infyom.publish:layout`
 
-- 11 - Execute o comando: `php artisan migrate`
+- 10 - Execute o comando: `php artisan migrate`
 
-- 12 - Execute o comando: `php artisan serve`
+- 11 - Execute o comando: `php artisan serve`
 
 	-- Vá até http://localhost:8000/register
 
@@ -91,3 +91,13 @@
 -- $MODEL é o nome da Model que será criada
 
 -- $SCHEMA_FILE.json é o arquivo .json adicionado em "model_schemas"
+
+## Referências
+
+- https://labs.infyom.com/laravelgenerator/docs/7.0/publish-layout
+
+- https://labs.infyom.com/laravelgenerator/docs/6.0/schema-builder
+
+- https://harish81.github.io/infyom-schema-generator/
+
+- https://github.com/harish81/infyom-schema-generator
