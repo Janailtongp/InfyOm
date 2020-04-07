@@ -1,7 +1,32 @@
-# Replicando o projeto
+# I - Iniciando esse projeto
+- 1 - Clone a base de dados:
+
+	`git clone https://github.com/Janailtongp/InfyOm.git`
+
+- 2 - Atualize as dependências:
+
+	`composer update`
+
+- 3 - Crie o arquivo de configurações ".env" e configure a conexão com sua base de dados.
+	
+	`cp .\.env.example .env`
+
+- 4 - Adicione uma chave ao projeto:
+	
+	`php artisan key:generate`
+
+- 5 - Execute as migrações:
+
+	`php artisan migrate`
+
+- 6 - Execute o comando: `php artisan serve`
+
+	-- Vá até http://localhost:8000/register
+
+# II - Instalando a InfyOm no seu projeto Laravel
 - 1 - Criando um projeto Laravel:
 
-	`composer create-project --prefer-dist laravel/laravel InfyOm`
+	`composer create-project --prefer-dist laravel/laravel project_name`
 
 - 2 - Configure o .env, adicionando o banco de dados e caso seja necessário. Gere a chave de segurança do projeto com o comando:
 
@@ -49,7 +74,7 @@
 
 	-- Vá até http://localhost:8000/register
 
-## Adicionando um novo CRUD
+## III - Adicionando um novo CRUD
 
 - 1 - Cria o Json Schema em: 
 
